@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="shortcut icon" href="./imgs/exchange.png" type="image/png">
+    <title>Golden Text</title>
+  </head>
+  <body>
+    <div class="mdl_submit" id="submitwindow">
+      <div class="modal_submit">
+        <div class="modal_submit__subs">
+          Ваша заявка принята
+        </div>
+        <button id="close_sub_mdl" class="modal_submit__button" type="button" name="button">OK</button>
+      </div>
+    </div>
+    <div class="modal_login" id="loginwindow">
+      <div class="loginform">
+        <div class="loginform__top">
+          <div class="loginform__title">
+            Посчитать стоимость
+          </div>
+          <div class="loginform__cancel">
+            <img id="close_mdl" class="loginform__cancel__img" src="./imgs/error.png">
+          </div>
+        </div>
+        <div class="loginform__infos">
+          <input type="text" class="loginform__info" placeholder="Язык оригинала">
+          <input type="text" class="loginform__info" placeholder="Язык перевода">
+          <input type="text" class="loginform__info" placeholder="Ваше имя">
+          <input type="tel" class="loginform__info" placeholder="Телефон">
+        </div>
+        <div class="pinfiletitle">
+          Добавить файлы
+        </div>
+        <div class="pinfiles">
+          <form enctype="multipart/form-data" method="post">
+            <p><input type="file" multiple>
+          </form>
+        </div>
+        <input id="show_sub_mdl" class="sendinfos" type="submit" value="Посчитать">
+      </div>
+    </div>
+    <header class="header">
+      <nav class="header__nav">
+        <a class="nav__link" href="#main">
+          <img src="./imgs/logo.svg">
+        </a>
+        <div class="nav__link">
+          <a class="link__subs" href="#serve">Наши услуги</a>
+        </div>
+        <div class="nav__link">
+          <a class="link__subs" href="#partner">Партнеры</a>
+        </div>
+        <div class="nav__link">
+          <a class="link__subs" href="#aboutus">О нас</a>
+        </div>
+        <div class="nav__link nav__link_phonenum">
+          <a class="link__subs link__subs_tel" href="tel: +7 701 500 58 78">+7 (701) 500 58 78</a>
+        </div>
+        <div class="nav__link">
+          <button id="show_mdl" class="link__submit" type="button" name="button">Заказать перевод</button>
+        </div>
+        <div class="nav__link">
+          <a href="">
+            <img class="link__img" src="./imgs/vk-logo.png">
+          </a>
+          <a href="">
+            <img src="./imgs/instagram-logo.png">
+          </a>
+        </div>
+      </nav>
+    </header>
+    <section class="utp" id="main">
+      <div class="utp__overlay"></div>
+      <div class="utp__description">
+        <div class="description__title">
+          Мы переводим документы любой сложности
+        </div>
+        <div class="description__subs">
+          У нас вы можете заказать перевод технических, юридических, медицинских и других текстов
+        </div>
+        <div class="description__title">
+          Мы экономим Ваше время
+        </div>
+        <div class="description__subs">
+          Перевод личных документов ( в т.ч. паспорта, свидетельства о рождении, о браке, справок, уд. личности) от 10 минут.
+        </div>
+        <div class="description__title">
+          Мы своевременно оказываем услуги
+        </div>
+        <div class="description__subs">
+          Сдача переводов оговаривается заранее.
+        </div>
+        <div class="description__title description__title_only">
+          Вы всегда в курсе на каком этапе находится работа
+        </div>
+        <div class="description__title description__title_only">
+          Мы переводим тексты в любых форматах
+        </div>
+        <div class="description__title description__title_only">
+          Прием заказа 24/7
+        </div>
+      </div>
+    </section>
+    <section class="service" id="serve">
+      <div class="service__title">
+        <div class="service__title__block">
+          Наши услуги
+        </div>
+      </div>
+      <div class="service__row">
+        <div class="row__element">
+          <div class="lang__img">
+            <img src="./imgs/britain.svg">
+          </div>
+          <div class="lang__title">
+            Перевод на английский
+          </div>
+          <div class="lang__subs">
+            от 1500 тг/стр
+          </div>
+        </div>
+        <div class="row__element">
+          <div class="lang__img">
+            <img src="./imgs/kazakhstan.svg">
+          </div>
+          <div class="lang__title">
+            Перевод на казахский
+          </div>
+          <div class="lang__subs">
+            от 1300 тг/стр
+          </div>
+        </div>
+        <div class="row__element">
+          <div class="lang__img">
+            <img src="./imgs/china.svg">
+          </div>
+          <div class="lang__title">
+            Перевод на китайский
+          </div>
+          <div class="lang__subs">
+            от 2300 тг/стр
+          </div>
+        </div>
+      </div>
+      <div class="service__row">
+        <div class="row__element">
+          <div class="lang__img">
+            <img src="./imgs/spain.svg">
+          </div>
+          <div class="lang__title">
+            Перевод на испанский
+          </div>
+          <div class="lang__subs">
+            от 2500 тг/стр
+          </div>
+        </div>
+        <div class="row__element">
+          <div class="lang__img">
+            <img src="./imgs/italy.svg">
+          </div>
+          <div class="lang__title">
+            Перевод на итальянский
+          </div>
+          <div class="lang__subs">
+            от 2500 тг/стр
+          </div>
+        </div>
+        <div class="row__element">
+          <div class="lang__img">
+            <img src="./imgs/mongolia.svg">
+          </div>
+          <div class="lang__title">
+            Перевод на монгольский
+          </div>
+          <div class="lang__subs">
+            от 1700 тг/стр
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order">
+      <div class="order__title">
+        <div class="order__title__block">
+          Как получить перевод?
+        </div>
+      </div>
+      <div class="orderings">
+        <div class="ordering">
+          <div class="ordering__title">
+            1. Отправляете файл по почте
+          </div>
+          <div class="ordering__description">
+            <div class="ordering__subs">
+              <div class="ordering__sub">
+                Файлы с текстом в любом формате (jpeg, doc, pdf)
+              </div>
+              <div class="ordering__sub">
+                на почту
+              </div>
+              <div class="ordering__sub ordering__sub__mail">
+                goldentext.ta@gmail.com
+              </div>
+            </div>
+            <div class="ordering__img">
+              <img src="./imgs/gmail.png">
+            </div>
+          </div>
+        </div>
+        <div class="ordering">
+          <div class="ordering__title">
+            2. Обговариваем условия заказа
+          </div>
+          <div class="ordering__description">
+            <div class="ordering__subs">
+              <div class="ordering__sub">
+                Наш специалист бесплатно проконсультирует вас по телефону и даст рекомендации подходящие вам
+              </div>
+            </div>
+            <div class="ordering__img">
+              <img src="./imgs/test.png">
+            </div>
+          </div>
+        </div>
+        <div class="ordering">
+          <div class="ordering__title">
+            3. Внесите предоплату
+          </div>
+          <div class="ordering__description">
+            <div class="ordering__subs">
+              <div class="ordering__sub">
+                Предоплата 50%. Постоплата для постоянных клиентов. Можете оплатить любым удобным для вас способом!Для юр. лиц пришлем счет на оплату и предоставим все документы.
+              </div>
+            </div>
+            <div class="ordering__img">
+              <img src="./imgs/payment.png">
+            </div>
+          </div>
+        </div>
+        <div class="ordering">
+          <div class="ordering__title">
+            4. Получаете свой перевод
+          </div>
+          <div class="ordering__description">
+            <div class="ordering__subs">
+              <div class="ordering__sub">
+                Отправка удобным для Вас способом (на почту, через Whatsapp, Telegram).
+              </div>
+            </div>
+            <div class="ordering__img">
+              <img src="./imgs/contract.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners" id="partner">
+      <div class="partners__title">
+        <div class="partners__title__block">
+          Наши партнеры
+        </div>
+      </div>
+      <div class="partners__row">
+        <div class="partners__row__subs">
+          <div class="partners__img">
+            <img src="./imgs/qazaqkuresilogo.png">
+          </div>
+          <div class="partners__subs partners__sub1">
+            ОЮЛ в ФА «International Qazaq kuresi federation»
+          </div>
+        </div>
+        <div class="partners__row__subs">
+          <div class="partners__img">
+            <img src="./imgs/uglogo.png">
+          </div>
+          <div class="partners__subs partners__sub2">
+            ТОО «Caspian legacy construction» в сотрудничестве с «United Green»
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="aboutus">
+      <div class="about__title">
+        <div class="about__title__block">
+          О нас
+        </div>
+      </div>
+      <div class="about__description">
+        <div class="about__description__subs">
+          <div class="about__sub">
+            <div class="about__subs">
+              Переводческое агентство&nbsp
+            </div>
+            <div class="about__subs about__subs__main">
+              «Golden text»
+            </div>
+            <div class="about__subs">
+             &nbspпредлагает Вам услуги
+            </div>
+          </div>
+          <div class="about__subs">
+            профессионального письменного перевода. Что позволяет
+          </div>
+          <div class="about__subs">
+            выполнить переводы любого объема в удобные для Вас сроки,
+          </div>
+          <div class="about__subs">
+            с соблюдением полной конфиденциальности получаемой
+          </div>
+          <div class="about__subs">
+            информации и материалов.
+          </div>
+        </div>
+        <div class="about__description__img">
+          <img src="./imgs/logoabout.svg">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__sub">
+        Golden Text (c) 2019
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
